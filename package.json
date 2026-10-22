@@ -1,0 +1,17 @@
+{
+  "name": "web-tin-tuc",
+  "version": "1.0.0",
+  "description": "Bài tập lớn: Xây dựng website tin tức (HTML/CSS/JS thuần + LocalStorage + crawler dantri.com.vn)",
+  "scripts": {
+    "start": "node tools/server.js",
+    "crawl": "node tools/crawl-dantri.js --limit 10",
+    "crawl:all": "node tools/crawl-dantri.js --limit 10 --children",
+    "fix-data": "node tools/fix-data.js"
+  },
+  "dependencies": {
+    "linkedom": "^0.18.5"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
