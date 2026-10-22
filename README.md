@@ -123,11 +123,4 @@ Gửi quá nhiều request trong thời gian ngắn sẽ bị dantri tạm chặ
 
 ---
 
-## 5. Gợi ý câu hỏi vấn đáp
-1. *LocalStorage khác SessionStorage và Cookie thế nào?* — LocalStorage tồn tại vĩnh viễn đến khi xoá, ~5MB, không gửi lên server; SessionStorage mất khi đóng tab; Cookie nhỏ (~4KB) và được gửi kèm mọi request.
-2. *Tại sao không fetch trực tiếp dantri từ trình duyệt?* — Bị chặn bởi CORS (xem 4.4).
-3. *Sắp xếp mới → cũ làm thế nào?* — `publishedAt` dạng `YYYY-MM-DD HH:mm` nên so sánh chuỗi (`localeCompare`) cũng đúng thứ tự thời gian.
-4. *Chống XSS khi hiển thị dữ liệu crawl?* — Mọi chuỗi đều qua hàm `esc()` (đổi `<`, `>`, `&`, `"` thành ký tự an toàn) trước khi gán `innerHTML`.
-
----
 Dữ liệu bài viết thuộc bản quyền Báo Dân trí, chỉ dùng cho mục đích học tập.
